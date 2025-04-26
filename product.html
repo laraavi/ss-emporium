@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <!-- Bootstrap 5 CSS -->
+    
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    <body>
+    <!-- Premium Navbar -->
+    <nav class="navbar navbar-premium navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/SS E blue.jpg" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Products
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
+                          <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+              <!-- Dark Mode Toggle Button -->
+           <div class="dark-mode-toggle">
+            <button id="darkModeSwitch">🌙</button>
+        </div>
+
+              
+          </div>
+      </div>
+  </nav>
+
+  <!-- Mobile Menu Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
+                      <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
+                      <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                  </ul>
+              </li>
+              
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+          </ul>
+
+           <div class="dark-mode-toggle">
+            <button id="darkModeSwitch">🌙</button>
+        </div>
+
+          <div class="mt-4 pt-3 border-top">
+              <div class="d-flex justify-content-center">
+                  <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+       <!-- Breadcrumb Section -->
+<nav aria-label="breadcrumb" class="breadcrumb-section">
+  <div class="container">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">All Products</li>
+    </ol>
+  </div>
+</nav>
+
+          <section class="categories-section">
+            <div class="categories-title">
+              <h2>BRANDS</h2>
+            </div>
+            <div class="categories-grid">
+              <div class="category-card">Brand-1</div>
+              <div class="category-card">Brand-2</div>
+              <div class="category-card">Brand-3</div>
+              <div class="category-card">Brand-4</div>
+              <div class="category-card">Brand-5</div>
+            </div>
+          </section>
+  <!---ALL product section start -->
+  <section class="product-section">
+    <div class="container">
+      <h2 class="section-title">Our Products</h2>
+      <div class="product-grid">
+        
+        <!-- Single Product -->
+        <div class="product-item">
+          <img src="images/product-2.webp" alt="Product 1">
+          <div class="product-buttons">
+            <button class="btn" onclick="openQuickView('Product 1')">Quick View</button>
+            <button class="btn" onclick="openOrderNow('Product 1')">Order Now</button>
+          </div>
+        </div>
+  
+        <!-- Repeat similar -->
+        <div class="product-item">
+          <img src="images/product-3.webp" alt="Product 2">
+          <div class="product-buttons">
+            <button class="btn" onclick="openQuickView('Product 2')">Quick View</button>
+            <button class="btn" onclick="openOrderNow('Product 2')">Order Now</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="images/product-3.webp" alt="Product 2">
+          <div class="product-buttons">
+            <button class="btn" onclick="openQuickView('Product 2')">Quick View</button>
+            <button class="btn" onclick="openOrderNow('Product 2')">Order Now</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="images/product-3.webp" alt="Product 2">
+          <div class="product-buttons">
+            <button class="btn" onclick="openQuickView('Product 2')">Quick View</button>
+            <button class="btn" onclick="openOrderNow('Product 2')">Order Now</button>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+    </div>
+  </section>
+  
+  <!-- Quick View Modal -->
+  <div id="quickViewModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('quickViewModal')">&times;</span>
+      <h3 id="quickViewTitle"></h3>
+      <p>Product Details Coming Soon...</p>
+    </div>
+  </div>
+  
+  <!-- Order Now Modal -->
+  <div id="orderNowModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('orderNowModal')">&times;</span>
+      <h3 id="orderNowTitle"></h3>
+      <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <button type="submit" class="btn">Submit Order</button>
+      </form>
+    </div>
+  </div>
+  
+  <!---ALL product section End -->
+  <section class="product-tabs-section">
+    <div class="container">
+      <h2 class="section-title">Explore Products</h2>
+      
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" data-tab="featured">Featured</button>
+      </div>
+  
+      <!-- Tab Contents -->
+      <div class="tab-content" id="featured">
+        <div class="products-grid">
+          <div class="product-card"><a href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></div>
+          <div class="product-card"><a href="product-2.html">Professional Dental CBCT - HiRes3D</a></div>
+        </div>
+      </div>
+  
+      <div class="tab-content" id="bestseller" style="display:none;">
+        <div class="products-grid">
+          <div class="product-card">Product 5</div>
+          <div class="product-card">Product 6</div>
+          <div class="product-card">Product 7</div>
+          <div class="product-card">Product 8</div>
+        </div>
+      </div>
+  
+      <div class="tab-content" id="newarrival" style="display:none;">
+        <div class="products-grid">
+          <div class="product-card">Product 9</div>
+          <div class="product-card">Product 10</div>
+          <div class="product-card">Product 11</div>
+          <div class="product-card">Product 12</div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <section class="product-grid-section">
+    <div class="container">
+      <h2 class="section-title">Top Trending Products</h2>
+      <div class="product-grid">
+        
+        <!-- Product Card 1 -->
+        <div class="product-card-premium">
+          <div class="product-image">
+            <img src="images/product-2.webp" alt="Product Image">
+            <span class="badge">-20%</span>
+            <div class="hover-buttons">
+              <button class="btn-cart">🛒 Add to Cart</button>
+              <button class="btn-wishlist">❤️ Wishlist</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Stylish Sneakers</h3>
+            <div class="product-rating">⭐⭐⭐⭐☆ (4.5)</div>
+            <div class="product-price">
+              <span class="new-price">$59.99</span>
+              <span class="old-price">$75.00</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product Card 2 -->
+        <div class="product-card-premium">
+          <div class="product-image">
+            <img src="images/product-3.webp" alt="Product Image">
+            <span class="badge">NEW</span>
+            <div class="hover-buttons">
+              <button class="btn-cart">🛒 Add to Cart</button>
+              <button class="btn-wishlist">❤️ Wishlist</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Leather Wallet</h3>
+            <div class="product-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+            <div class="product-price">
+              <span class="new-price">$39.99</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product Card 3 -->
+        <div class="product-card-premium">
+          <div class="product-image">
+            <img src="images/product-5.webp" alt="Product Image">
+            <span class="badge">-10%</span>
+            <div class="hover-buttons">
+              <button class="btn-cart">🛒 Add to Cart</button>
+              <button class="btn-wishlist">❤️ Wishlist</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Wireless Earbuds</h3>
+            <div class="product-rating">⭐⭐⭐⭐☆ (4.2)</div>
+            <div class="product-price">
+              <span class="new-price">$89.99</span>
+              <span class="old-price">$99.99</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+          
+
+
+
+
+
+
+
+
+
+
+          
+    <!-- ====== Footer Section ====== -->
+    <footer class="footer" id="footer">
+        <p>© 2025  SS-EMPORIUM Website. All rights reserved and Developed by Lilium Info Tech</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+  
+    
+    
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS  -->
+
+  <script src="js/main.js"></script>
+  <script src="js/darkMode.js"></script>
+  <script>
+    const darkModeSwitch = document.getElementById('darkModeSwitch');
+  
+    darkModeSwitch.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

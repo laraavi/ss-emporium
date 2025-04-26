@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product</title>
+        <!-- Bootstrap 5 CSS -->
+    
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    <body>
+   <!-- Premium Navbar -->
+   <nav class="navbar navbar-premium navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/SS E blue.jpg" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
+                        <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Dark Mode Toggle Button -->
+         <div class="dark-mode-toggle">
+          <button id="darkModeSwitch">🌙</button>
+      </div>
+
+            
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
+                    <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
+                    <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="product.html">All Products</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+         <div class="dark-mode-toggle">
+          <button id="darkModeSwitch">🌙</button>
+      </div>
+
+        <div class="mt-4 pt-3 border-top">
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <!-- Breadcrumb Section -->
+     <nav aria-label="breadcrumb" class="breadcrumb-section">
+      <div class="container">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">3-In-1 Multifunctional Dental CBCT - Smart3D-X</li>
+        </ol>
+      </div>
+    </nav>
+<!--mixit up-->
+<section class="mixitup-section">
+  <div class="container">
+    <h2 class="section-title">Our Collections</h2>
+
+    <div class="controls">
+      <button type="button" class="filter" data-filter=".product">Product</button>
+      <button type="button" class="filter" data-filter=".software">Software</button>
+      <button type="button" class="filter" data-filter=".imaging">Imaging</button>
+    </div>
+
+    <!-- MixItUp Items -->
+    <div class="mix-container">
+      <div class="mix product">
+        <!-- Product Section -->
+<section class="product-section">
+  <div class="container">
+    <h2 class="product-title" style="text-align: center; padding-top:20px;font-size:16px;">CT / CEPH / PAN</h2>
+    <div class="product-image">
+      <img src="images/product-1/CT-CEPH-PAN.png" alt="Featured Product">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">Model Scan (Optional)</h2>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <img src="images/product-1/modal-1.png" alt="Image 1" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+      <img src="images/product-1/modal-2.png" alt="Image 2" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">High resolution up to 2.0 lp/mm
+      Voxel size 0.05-0.25mm</h2>
+    <div class="product-image">
+      <img src="images/product-1/High resolution .png" alt="Featured Product">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">High-Definition Image - Helps Accurate Diagnosis and Treatment
+      sponsor
+      </h2>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <img src="images/product-1/modal-3.png" alt="Image 1" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+      <img src="images/product-1/modal-4.png" alt="Image 2" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">High-Definition Image - Helps Accurate Diagnosis and Treatment
+      sponsor
+      </h2>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <img src="images/product-1/modal-5.png" alt="Image 1" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+      <img src="images/product-1/modal-6.png" alt="Image 2" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">Panoramic Image Reconstructed from 3D Image Data</h2>
+    <div class="product-image">
+      <img src="images/product-1/Panoramic Image Reconstructed from 3D Image Data.png" alt="Featured Product">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">High-Definition Image - Helps Accurate Diagnosis and Treatment
+      sponsor
+      </h2>
+    <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+      <img src="images/product-1/modal-5.png" alt="Image 1" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+      <img src="images/product-1/modal-6.png" alt="Image 2" style="flex: 1 1 45%; max-width: 100%; height: auto;">
+    </div>
+  </div>
+ 
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">Feature</h2>
+    <div class="product-image">
+      <img src="images/product-1/feture-1.png" alt="Featured Product">
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="product-title"  style="text-align: center; padding-top:20px;font-size:16px;">Product Size Display</h2>
+    <div class="product-image">
+      <img src="images/product-1/3D-machine efect.png" alt="Featured Product">
+    </div>
+  </div>
+</section>
+
+      </div>
+      <div class="mix software">
+        <img src="images/product-1/High resolution .png" alt="Software 1">
+      </div>
+      <div class="mix imaging">
+        <section class="imaging-grid-section mix imaging">
+          <div class="container">
+            <div class="row">
+              <!-- Imaging Item 1 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-1.jpg" alt="Imaging 1">
+                  <div class="overlay-text">
+                    <h4>Crown Root Fracture</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 2 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-2.jpg" alt="Imaging 2">
+                  <div class="overlay-text">
+                    <h4>Loose Teeth</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 3 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-3.jpg" alt="Imaging 3">
+                  <div class="overlay-text">
+                    <h4>Disto-Proximal caries</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 4 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-4.jpg" alt="Imaging 4">
+                  <div class="overlay-text">
+                    <h4>Dental Caries, Supernumerary Teeth</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 5 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-5.jpg" alt="Imaging 5">
+                  <div class="overlay-text">
+                    <h4>Root Fracture</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 6 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-6.jpg" alt="Imaging 6">
+                  <div class="overlay-text">
+                    <h4>Impacted Wisdom Teeth</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 7 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-7.jpg" alt="Imaging 7">
+                  <div class="overlay-text">
+                    <h4>Apical Cyst</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 8 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-8.jpg" alt="Imaging 8">
+                  <div class="overlay-text">
+                    <h4>Root Evaluation</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 9 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-9.jpg" alt="Imaging 9">
+                  <div class="overlay-text">
+                    <h4>Root Canal Treatment</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 10 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-10.jpg" alt="Imaging 10">
+                  <div class="overlay-text">
+                    <h4>Orthodontics - Misplaced Grow</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 11 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-11.jpg" alt="Imaging 11">
+                  <div class="overlay-text">
+                    <h4>Small FOV for Implantation</h4>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Imaging Item 12 -->
+              <div class="col-md-4">
+                <div class="image-wrapper">
+                  <img src="images/product-1/imaiging/img-12.jpg" alt="Imaging 12">
+                  <div class="overlay-text">
+                    <h4>Cephalometric LAT</h4>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  
+  
+  
+          
+
+
+
+
+
+
+
+
+
+
+          
+    <!-- ====== Footer Section ====== -->
+    <footer class="footer" id="footer">
+        <p>© 2025  SS-EMPORIUM Website. All rights reserved and Developed by Lilium Info Tech</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+  
+    
+    
+  
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS  -->
+
+    <script src="js/main.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script>
+      const darkModeSwitch = document.getElementById('darkModeSwitch');
+    
+      darkModeSwitch.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+      <!-- MixItUp Library -->
+<!-- Load MixItUp Library -->
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+
+<!-- Initialize MixItUp After HTML Load -->
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+<script>
+  var mixer = mixitup('.mix-container', {
+    load: {
+      filter: '.product' // শুরুতেই Product গুলো শো হবে
+    }
+  });
+</script>
+</body>
+</html>
