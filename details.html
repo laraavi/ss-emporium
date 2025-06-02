@@ -13,6 +13,96 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+   <!-- Premium Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/SS Done.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button class="hamburger " id="hamburgerBtn">☰</button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">SS Emporium</a></li>
+            <li><a class="dropdown-item" href="ssa.html">Sure Smile Aligner</a></li>
+            <li><a class="dropdown-item" href="ssa.html">AdvancedDent Dental Lab</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="product.html">All Products</a></li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            Learn
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Training</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+           Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="">Download Center</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Fullscreen Mobile Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+ <ul class="menu-items">
+  <li><a href="index.html">HOME</a></li>
+  
+
+  <!-- Side Slide Dropdown -->
+  <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">About Us</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="about.html">SS Emporium</a></li>
+      <li><a href="ssa.html">Sure Smile Aligner</a></li>
+      <li><a href="ssa.html">AdvancedDent Dental Lab</a></li>
+    </ul>
+  </li>
+  <li><a href="product.html">All Products</a></li>
+
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Learn</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Training</a></li>
+      
+    </ul>
+  </li>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Support</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="">Download Center</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+</div>
 
 <section class="product-section py-5">
   <div class="container">
