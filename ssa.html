@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .brand-logo-slider img {
+      max-height: 60px;
+      object-fit: contain;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Premium Navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/SS Done.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button class="hamburger d-lg-none" id="hamburgerBtn">☰</button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">SS Emporium</a></li>
+            <li><a class="dropdown-item" href="ssa.html">Sure Smile Aligner</a></li>
+            <li><a class="dropdown-item" href="ssa.html">AdvancedDent Dental Lab</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="product.html">All Products</a></li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            Learn
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Training</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+           Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="">Download Center</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Fullscreen Mobile Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+ <ul class="menu-items">
+  <li><a href="index.html">HOME</a></li>
+  
+
+  <!-- Side Slide Dropdown -->
+  <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">About Us</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="about.html">SS Emporium</a></li>
+      <li><a href="ssa.html">Sure Smile Aligner</a></li>
+      <li><a href="ssa.html">AdvancedDent Dental Lab</a></li>
+    </ul>
+  </li>
+  <li><a href="product.html">All Products</a></li>
+
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Learn</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Training</a></li>
+      
+    </ul>
+  </li>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Support</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="">Download Center</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+</div>
+  <!-- Hero Section with Image Background -->
+  <section class="hero-section text-white text-center d-flex align-items-center justify-content-center"
+    style="background: url('images/ssa/Bannar.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Sure Smile Aligner</h1>
+      <p class="lead">Delivering confident, healthy smiles with advanced clear aligner technology</p>
+    </div>
+  </section>
+
+  <!-- Company Introduction -->
+
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center section-title">About Sure Smile Aligner</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="intro-card mb-4 p-3 shadow-sm">
+            <p class="mb-0">
+              <i class="fa-solid fa-circle-right me-2 text-info"></i>
+              <strong>Our Mission:</strong> To provide premium, accessible, and personalized orthodontic care using
+              advanced clear aligner technology.
+            </p>
+          </div>
+          <div class="intro-card mb-3 p-3 shadow-sm">
+            <p class="mb-0">
+              <i class="fa-solid fa-circle-right me-2 text-info"></i>
+              <strong>Our Vision:</strong> To lead the future of orthodontics by blending innovation, precision, and
+              aesthetics — making confident smiles achievable for everyone.
+            </p>
+          </div>
+          <div class="intro-card p-3 shadow-sm">
+            <p class="mb-0">
+              <i class="fa-solid fa-circle-right me-2 text-info"></i>
+              <strong>GLOBAL EXPERTISE:</strong> Sure Smile Aligner proudly partners with MaxFlex Aligner, a globally
+              trusted
+              manufacturer known for its technological superiority and proven results.
+            </p>
+          </div>
+
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="images/mission.jpg" alt="SureSmile Aligner on plate" class="img-fluid rounded-4 shadow" style="height: 500px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Global Partner -->
+  <section>
+    <div class="container">
+      <h2 class="text-center section-title">Our Global Partner: MaxFlex Aligner</h2>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <img src="images/com-1.png" alt="" class="img-fluid rounded-4">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h4>ABOUT MAXFLEX</h4>
+          <p>MaxFlex Aligner is a renowned global aligner producer
+            recognized for precision manufacturing, quality materials,
+            and patient satisfaction across international markets. Their
+            commitment to innovation ensures that every aligner is
+            crafted with the utmost accuracy and comfort.</p>
+          <h4>WHY MAXFLEX?</h4>
+          <ol class="custom-steps ps-0">
+            <li>Advanced 3D printing and thermoforming systems</li>
+            <li>Precision fit for all case complexities</li>
+            <li>High-volume, trusted production with consistentquality</li>
+
+          </ol>
+          <h4>PROVEN TRUST</h4>
+          <p>With thousands of successful cases globally, MaxFlex is aproven and reliable partner in transforming
+            smiles.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Product with Image -->
+
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center section-title">Our Product: SureSmile Aligners</h2>
+      <div class="row align-items-center">
+        
+        <div class="col-md-7 col-lg-7">
+          <h4>WHAT ARE CLEAR ALIGNERS?</h4>
+          <p>Clear aligners are transparent, removable trays that gradually shift your teeth. Made from BPA-free,
+            medical-grade thermoplastic, they are safe, stain-resistant, and comfortable.</p>
+          <h4>HOW THEY WORK</h4>
+          <ol class="custom-steps ps-0">
+            <li>Consultation & 3D Scan</li>
+            <li>Treatment Planning with MaxFlex Software</li>
+            <li>Production of Custom Aligner Series</li>
+            <li>Regular Progress Checks</li>
+            <li>Retainers Post-Treatment</li>
+          </ol>
+
+        </div>
+         <div class="col-md-5 col-lg-5 text-center">
+          <img src="images/work.jpg" alt="SureSmile Aligner on plate" class="img-fluid rounded-4 shadow">
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Benefits -->
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-7 text-center">
+          <img src="images/ss-4.jpg" alt="SureSmile Aligner on plate" class="img-fluid rounded-4 shadow" style="height: 400px;">
+        </div>
+        <div class="col-md-5 col-lg-5">
+          <h2>Product Benefits</h2>
+          <ol class="custom-steps ps-0 align-items-center">
+            <li>Discreet Appearance – nearly invisible</li>
+            <li>Customized Per Case</li>
+            <li>Comfortable & Removable</li>
+            <li>No Food Restrictions</li>
+          </ol>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h4 class="section-title">Clear Aligners vs Braces</h4>
+          <div class="table-responsive">
+            <table class="table custom-compare-table align-middle">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>SureSmile Aligners</th>
+                  <th>Traditional Braces</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aesthetic</td>
+                  <td>Clear/Invisible</td>
+                  <td>Visible Metal</td>
+                </tr>
+                <tr>
+                  <td>Comfort</td>
+                  <td>High</td>
+                  <td>Moderate</td>
+                </tr>
+                <tr>
+                  <td>Removable</td>
+                  <td>Yes</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Food Restrictions</td>
+                  <td>None</td>
+                  <td>Many</td>
+                </tr>
+                <tr>
+                  <td>Hygiene</td>
+                  <td>Easy Brushing/Flossing</td>
+                  <td>Harder to Maintain</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+              aria-expanded="true">
+              How long does treatment take?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Depending on case severity. Mild case need 180-200 days
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse2">
+              Can I eat with the aligners in?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              No. Remove them during meals for best results
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse3">
+              How often do I wear them?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+             Wear them 20 hours a day, removing only for eating and brushing
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4">
+              Are they painful?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Every set aligner when start first day maybe mild pain. Which is completely tolerable by patient. Otherwise no pain.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5">
+              How often are check-ups?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Every 2 months, or as advised by your dental provider
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6">
+              Are your aligners suitable for all types of dental misalignments?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Best for mild and moderate case
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CTA with Image -->
+  <section class="py-5 text-black text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h3>Ready to Start Your Smile Journey?</h3>
+          <p>Schedule a consultation with a Sure Smile Aligner provider near you.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/ss-3.jpg" alt="Smiling user with aligner" class="img-fluid shadow rounded-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <!-- <section class="py-5 text-center">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p><i class="fa-solid fa-phone"> </i>+880 1324-400259 </p>
+      <p><i class="fa-solid fa-envelope"> </i>INFO@SS-EMPORIUM.NET </p>
+      <p><i class="fa-solid fa-location-dot"> </i>House #5, Concord Arcadia, Road 4, Dhaka 1205, Bangladesh </p>
+      <p><i class="fa-solid fa-globe"> </i> <a href="http://ss-emporium.net/">ss-emporium.net</a></p>
+    </div>
+  </section> -->
+
+ <!-- WhatsApp Button -->
+<a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="floating-button whatsapp-btn" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+
+
+
+  <!--Footer Section -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Logo & Details -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="images/SS Done.png" alt="SS-EMPORIUM Logo">
+          </div>
+          <p>SS-EMPORIUM is a trusted dental equipment supplier and importer, dedicated to serving clinics and
+            professionals nationwide.</p>
+        </div>
+
+        <!-- Column 2: Useful Links -->
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li> <!-- ✅ New Login link added -->
+          </ul>
+        </div>
+
+
+        <!-- Column 3: Social Links -->
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        <p>© 2025 SS-EMPORIUM Website. All rights reserved. Developed by Lilium Info Tech</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Boostrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const fullscreenMenu = document.getElementById("fullscreenMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+  hamburgerBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.add("open");
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.remove("open");
+  });
+</script>
+
+<script>
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const parent = this.closest('.mobile-dropdown');
+      parent.classList.toggle('open');
+    });
+  });
+</script>
+
+
+
+
+</body>
+
+</html>

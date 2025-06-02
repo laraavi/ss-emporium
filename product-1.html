@@ -17,100 +17,95 @@
     
     </head>
     <body>
-   <!-- Premium Navbar -->
-   <nav class="navbar navbar-premium navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/SS E blue.jpg" alt="Logo">
-        </a>
+    <!-- Premium Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/SS Done.png" alt="Logo" style="height: 40px;">
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Hamburger for mobile -->
+    <button class="hamburger d-lg-none" id="hamburgerBtn">☰</button>
 
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                        <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <!-- Dark Mode Toggle Button -->
-         <div class="dark-mode-toggle">
-          <button id="darkModeSwitch">🌙</button>
-      </div>
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
 
-            
-        </div>
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">SS Emporium</a></li>
+            <li><a class="dropdown-item" href="ssa.html">Sure Smile Aligner</a></li>
+            <li><a class="dropdown-item" href="ssa.html">AdvancedDent Dental Lab</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="product.html">All Products</a></li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            Learn
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Training</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+           Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="">Download Center</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-<!-- Mobile Menu Offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
-                    <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                    <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                </ul>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
+<!-- Fullscreen Mobile Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+ <ul class="menu-items">
+  <li><a href="index.html">HOME</a></li>
+  
 
-         <div class="dark-mode-toggle">
-          <button id="darkModeSwitch">🌙</button>
-      </div>
+  <!-- Side Slide Dropdown -->
+  <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">About Us</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="about.html">SS Emporium</a></li>
+      <li><a href="ssa.html">Sure Smile Aligner</a></li>
+      <li><a href="ssa.html">AdvancedDent Dental Lab</a></li>
+    </ul>
+  </li>
+  <li><a href="product.html">All Products</a></li>
 
-        <div class="mt-4 pt-3 border-top">
-            <div class="d-flex justify-content-center">
-                <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </div>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Learn</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Training</a></li>
+      
+    </ul>
+  </li>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Support</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="">Download Center</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
 </div>
 
      <!-- Breadcrumb Section -->
@@ -128,9 +123,9 @@
     <h2 class="section-title">Our Collections</h2>
 
     <div class="controls">
-      <button type="button" class="filter" data-filter=".product">Product</button>
-      <button type="button" class="filter" data-filter=".software">Software</button>
-      <button type="button" class="filter" data-filter=".imaging">Imaging</button>
+      <button type="button" class="btn btn-premium" data-filter=".product">Product</button>
+      <button type="button" class="btn btn-premium" data-filter=".software">Software</button>
+      <button type="button" class="btn btn-premium" data-filter=".imaging">Imaging</button>
     </div>
 
     <!-- MixItUp Items -->
@@ -343,7 +338,10 @@
   </div>
 </section>
 
-
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="floating-button whatsapp-btn" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
   
   
   
@@ -362,13 +360,48 @@
           
     <!-- ====== Footer Section ====== -->
     <footer class="footer" id="footer">
-        <p>© 2025  SS-EMPORIUM Website. All rights reserved and Developed by Lilium Info Tech</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="container">
+        <div class="footer-grid">
+    
+          <!-- Column 1: Logo & Details -->
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="images/SS E blue.jpg" alt="SS-EMPORIUM Logo">
+            </div>
+            <p>SS-EMPORIUM is a trusted dental equipment supplier and importer, dedicated to serving clinics and professionals nationwide.</p>
+          </div>
+    
+          <!-- Column 2: Useful Links -->
+<div class="footer-column">
+  <h4>Useful Links</h4>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li> <!-- ✅ New Login link added -->
+  </ul>
+</div>
+
+    
+          <!-- Column 3: Social Links -->
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
         </div>
-      </footer>
+    
+        <!-- Bottom Text -->
+        <div class="footer-bottom">
+          <p>© 2025 SS-EMPORIUM Website. All rights reserved. Developed by Lilium Info Tech</p>
+        </div>
+      </div>
+    </footer>
   
     
     
@@ -398,6 +431,32 @@
     load: {
       filter: '.product' // শুরুতেই Product গুলো শো হবে
     }
+  });
+</script>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const fullscreenMenu = document.getElementById("fullscreenMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+  hamburgerBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.add("open");
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.remove("open");
+  });
+</script>
+
+<script>
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const parent = this.closest('.mobile-dropdown');
+      parent.classList.toggle('open');
+    });
   });
 </script>
 </body>

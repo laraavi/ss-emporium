@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .brand-logo-slider img {
+            max-height: 60px;
+            object-fit: contain;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
      <!-- Premium Navbar -->
-     <nav class="navbar navbar-premium navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="index.html">
-              <img src="images/SS E blue.jpg" alt="Logo">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/SS Done.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button class="hamburger " id="hamburgerBtn">☰</button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            About Us
           </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Products
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                          <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              <!-- Dark Mode Toggle Button -->
-           <div class="dark-mode-toggle">
-            <button id="darkModeSwitch">🌙</button>
-        </div>
-
-              
-          </div>
-      </div>
-  </nav>
-
-  <!-- Mobile Menu Offcanvas -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-      <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Products
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
-                      <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                      <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                  </ul>
-              </li>
-              
-              <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">SS Emporium</a></li>
+            <li><a class="dropdown-item" href="ssa.html">Sure Smile Aligner</a></li>
+            <li><a class="dropdown-item" href="ssa.html">AdvancedDent Dental Lab</a></li>
           </ul>
+        </li>
 
-           <div class="dark-mode-toggle">
-            <button id="darkModeSwitch">🌙</button>
-        </div>
-
-          <div class="mt-4 pt-3 border-top">
-              <div class="d-flex justify-content-center">
-                  <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-          </div>
-      </div>
+        <li class="nav-item"><a class="nav-link" href="product.html">All Products</a></li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            Learn
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Training</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+           Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="">Download Center</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+
+<!-- Fullscreen Mobile Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+ <ul class="menu-items">
+  <li><a href="index.html">HOME</a></li>
+  
+
+  <!-- Side Slide Dropdown -->
+  <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">About Us</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="about.html">SS Emporium</a></li>
+      <li><a href="ssa.html">Sure Smile Aligner</a></li>
+      <li><a href="ssa.html">AdvancedDent Dental Lab</a></li>
+    </ul>
+  </li>
+  <li><a href="product.html">All Products</a></li>
+
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Learn</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Training</a></li>
+      
+    </ul>
+  </li>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Support</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="">Download Center</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+</div>
+ 
 
 <!-- Hero Slider Section  start-->
 <div class="hero-slider">
@@ -123,7 +131,7 @@
         <div class="slide-content" >
             <h1>SS-EMPORIUM</h1>
             <p>A dental equipment supplier and importer company typically focuses on providing a range of dental products and equipment to dental professionals, clinics, and other related businesses.</p>
-            <a href="#" class="btn btn-premium">Explore More</a>
+            <a href="#" class="btn btn-primary btn-submit">Explore More</a>
         </div>
     </div>
 
@@ -132,7 +140,7 @@
         <div class="slide-content">
             <h1>SS-EMPORIUM</h1>
             <p>A dental equipment supplier and importer company typically focuses on providing a range of dental products and equipment to dental professionals, clinics, and other related businesses</p>
-            <a href="#" class="btn btn-premium">Discover Features</a>
+            <a href="#" class="btn btn-primary btn-submit">Discover Features</a>
         </div>
     </div>
 
@@ -162,103 +170,351 @@
         </button>
     </div>
 </div>
+    
+
+
+    
+
+ 
+    
     <!-- ====== Product Section ====== -->
-<section class="products" id="products">
+<section class="products py-5" id="products">
   <div class="container">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      
-      <!-- Product 1 -->
-      <div class="product-card">
-        <img src="images/product-2.webp" alt="Product 1 Image" class="product-img">
-        <h3><a href="product-1.html">Product 1</a></h3>
-        <p>Awesome description here.</p>
+    <h2 class="section-title text-center mb-5">Our Products</h2>
+    <div class="row g-4 mb-5">
+      <!-- Product Card -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-4.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-2.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-2.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ... -->
+
+    </div>
+     <div class="row g-4">
+      <!-- Product Card -->
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-4.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-2.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="product-card h-100 d-flex flex-column">
+          <!-- Product Image -->
+          <div class="product-image">
+            <img src="images/product-2.webp" alt="Kylan Alvarado" loading="lazy">
+          </div>
+          <!-- Product Info -->
+          <div class="p-3 text-center flex-grow-1 d-flex flex-column justify-content-between">
+            <h3 class="product-title mt-2 mb-3">Kylan Alvarado</h3>
+            <div class="btn-group">
+              <a href="https://ss-emporium.net/product-detail/12" class="btn btn-primary btn-submit">View Details</a>
+              
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Product 2 -->
-      <div class="product-card">
-        <img src="images/product-3.webp" alt="Product 2 Image" class="product-img">
-        <h3><a href="product-2.html">Product 2</a></h3>
-        <p>Another great product.</p>
-      </div>
-
-      <!-- All Products -->
-      <div class="product-card">
-        <img src="images/product-4.webp" alt="All Products Image" class="product-img">
-        <h3><a href="product.html">All Products</a></h3>
-        <p>Best of the best.</p>
-      </div>
+      <!-- Repeat above .col-md-6.col-lg-4 block for other products -->
+      <!-- ... -->
 
     </div>
   </div>
 </section>
-
-     <!-- ====== About Section ====== -->
-     <section class="about" id="about">
-        <div class="container">
-          <h1><a href="about.html" style="color: black;">About Us</a></h1>
-          <p style="color: black;">A dental equipment supplier and importer company typically focuses on providing a range of dental products and equipment to dental professionals, clinics, and other related businesses. These companies usually import high-quality dental tools, machinery, and supplies from global manufacturers, ensuring they meet the specific needs of the dental industry.</p>
-        </div>
-      </section>
-  
-    <!-- ====== Accordion Section ====== -->
-    <section class="faq" id="faq">
-      <div class="container">
-        <h2>FAQs</h2>
-        <div class="accordion">
-          <div class="accordion-item">
-            <div class="accordion-header"><a href="about.html">What services do you offer?</a></div>
-          <div class="accordion-item">
-            <div class="accordion-header"><a href="contact.html">How can I contact you?</a></div>
-          </div>
-        </div>
+    
+<!-- Happy Customers Section -->
+ <!-- Testimonial Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Our Happy Customers</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-card text-center">
+        <img src="images/happy-student/student-1.jpg" alt="Customer 1">
+        <h5 class="mt-3">John Doe</h5>
+        <p class="text-warning small">★★★★★</p>
+        <p class="text-muted">Great service! Very professional.</p>
       </div>
-    </section>
-  
-    <!-- ====== Modal Section (Hidden by default) ====== -->
-    <div class="modal" id="customModal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Subscribe Now</h5>
-          <button class="btn-close" id="closeModal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Get updates and offers directly to your inbox.</p>
-        </div>
-        <div class="modal-footer">
-          <button class="btn" id="subscribeBtn">Subscribe</button>
-        </div>
+      <div class="testimonial-card text-center">
+        <img src="images/happy-student/student-2.jpg" alt="Customer 2">
+        <h5 class="mt-3">Jane Smith</h5>
+        <p class="text-warning small">★★★★☆</p>
+        <p class="text-muted">Loved the experience. Will recommend.</p>
+      </div>
+      <div class="testimonial-card text-center">
+        <img src="images/happy-student/student-3.jpg" alt="Customer 3">
+        <h5 class="mt-3">Ali Khan</h5>
+        <p class="text-warning small">★★★★★</p>
+        <p class="text-muted">Very responsive and supportive team.</p>
+      </div>
+      <div class="testimonial-card text-center">
+        <img src="images/happy-student/student-3.jpg" alt="Customer 3">
+        <h5 class="mt-3">Ali Khan</h5>
+        <p class="text-warning small">★★★★★</p>
+        <p class="text-muted">Very responsive and supportive team.</p>
       </div>
     </div>
+  </div>
+</section>
+
+
+
+
+  <!--brands logo-->
+<section class="brand-logo-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 text-2xl font-bold text-gray-800">Our Partner Brands</h2>
+    <div class="brand-logo-slider">
+      <div><img src="images/brands/fastform.jpg" alt="Brand 1" class="mx-auto h-16"></div>
+      <div><img src="images/brands/Kingch.webp" alt="Brand 2" class="mx-auto h-16"></div>
+      <div><img src="images/brands/LOGO-LARGEV-1.jpg" alt="Brand 3" class="mx-auto h-16"></div>
+      <div><img src="images/brands/panda-scanner.png" alt="Brand 4" class="mx-auto h-16"></div>
+      <div><img src="images/brands/RayShape_logo.png" alt="Brand 5" class="mx-auto h-16"></div>
+      <div><img src="images/brands/rogin-logo.png" alt="Brand 6" class="mx-auto h-16"></div>
+      <div><img src="images/brands/Sunlight.png" alt="Brand 6" class="mx-auto h-16"></div>
+      <div><img src="images/brands/UNIZ.jpeg" alt="Brand 6" class="mx-auto h-16"></div>
+      <div><img src="images/brands/Xtcera.png" alt="Brand 6" class="mx-auto h-16"></div>
+      
+    </div>
+  </div>
+</section>
+ <!-- Home Page About Section -->
+<section class="py-5 about-section">
+    <div class="container">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+            <div class="row g-0 align-items-center flex-column flex-md-row">
+
+                <!-- Image -->
+                <div class="col-md-6">
+                    <img src="https://ss-emporium.net/frontend/assets/about/about.webp" alt="About SS-EMPORIUM" class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 300px;">
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-md-6 p-4 p-md-5">
+                    <h2 class="mb-3">About SS-EMPORIUM</h2>
+                    <p class="mb-2">SS-EMPORIUM is a trusted importer and supplier of premium dental equipment. We are committed to delivering top-notch tools that elevate the standards of dental care across the country.</p>
+                    <p class="mb-4">With years of industry experience, our team ensures quality, service, and customer satisfaction in every delivery.</p>
+                    <a href="https://ss-emporium.net/about" class="btn btn-primary btn-submit">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Brand Logo Slider End -->
+   <!-- WhatsApp Button -->
+<a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="floating-button whatsapp-btn" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+   
+
+
   
-    <!-- ====== Footer Section ====== -->
+    <!--Footer Section -->
     <footer class="footer" id="footer">
-      <p>© 2025  SS-EMPORIUM Website. All rights reserved and Developed by Lilium Info Tech</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+      <div class="container">
+        <div class="footer-grid">
+    
+          <!-- Column 1: Logo & Details -->
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="images/SS Done.png" alt="SS-EMPORIUM Logo">
+            </div>
+            <p>SS-EMPORIUM is a trusted dental equipment supplier and importer, dedicated to serving clinics and professionals nationwide.</p>
+          </div>
+    
+          <!-- Column 2: Useful Links -->
+<div class="footer-column">
+  <h4>Useful Links</h4>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li> <!-- ✅ New Login link added -->
+  </ul>
+</div>
+
+    
+          <!-- Column 3: Social Links -->
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Bottom Text -->
+        <div class="footer-bottom">
+          <p>© 2025 SS-EMPORIUM Website. All rights reserved. Developed by Lilium Info Tech</p>
+        </div>
       </div>
     </footer>
+    
 
   
-  
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Custom JS  -->
+<!-- Slick Carousel JS -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script src="js/main.js"></script>
-    <script src="js/darkMode.js"></script>
-    <script>
-      const darkModeSwitch = document.getElementById('darkModeSwitch');
-    
-      darkModeSwitch.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-      });
-    </script>
-    
+<!-- Slick Initialization -->
+<script>
+  $(document).ready(function(){
+    // Testimonial Slider
+    $('.testimonial-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    // Brand Logo Slider
+    $('.brand-logo-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 4 }},
+        { breakpoint: 768, settings: { slidesToShow: 3 }},
+        { breakpoint: 480, settings: { slidesToShow: 2 }}
+      ]
+    });
+  });
+</script>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const fullscreenMenu = document.getElementById("fullscreenMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+  hamburgerBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.add("open");
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.remove("open");
+  });
+</script>
+
+<script>
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const parent = this.closest('.mobile-dropdown');
+      parent.classList.toggle('open');
+    });
+  });
+</script>
+
+
+<!-- Dark Mode JavaScript -->
+<script>
+  const darkModeSwitch = document.getElementById('darkModeSwitch');
+  darkModeSwitch.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+<script src="js/darkMode.js"></script>
+
     
     
    

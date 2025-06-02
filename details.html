@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<section class="product-section py-5">
+  <div class="container">
+  <div class="text-center mb-5">
+  <h1 class="display-5 fw-bold text-primary">Product Name Here</h1>
+  <p class="text-muted fs-5">Advanced Dental Equipment for Modern Clinics</p>
+</div>
+
+
+    <div class="row bg-white p-4 rounded-4 shadow-lg mb-5 align-items-center">
+  <div class="col-md-6 text-center">
+    <img src="images/product-2.webp" alt="Product Name" class="img-fluid main-product-img" onclick="openModal(this.src)">
+  </div>
+  <div class="col-md-6">
+    <h3 class="brand-title mb-3 text-dark">Brand: <span class="text-primary">Brand Name Here</span></h3>
+    <img src="images/brands/LOGO-LARGEV-1.jpg" class="brand-logo mb-4 shadow-sm" alt="Brand Logo">
+    <p class="text-muted mb-4">Experience precision and comfort with our latest dental unit featuring ergonomic design, enhanced tools, and user-friendly control system.</p>
+    <a href="path/to/product_brochure.pdf" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fas fa-download me-2"></i>Download Brochure
+    </a>
+  </div>
+</div>
+
+
+   <div class="product-description p-5 rounded-4 shadow-sm bg-white mb-5">
+  <h4 class="mb-3 text-primary">Product Description</h4>
+  <p class="text-secondary">
+    This cutting-edge dental unit offers adjustable seating, intuitive control panel, high-quality suction system, and integrated LED lighting to ensure optimal patient care and comfort.
+  </p>
+</div>
+
+
+    <div class="gallery-section p-5 rounded-4 shadow-sm bg-light">
+  <h3 class="fw-bold mb-4 text-dark">Gallery</h3>
+  <div class="row g-4">
+    <!-- Repeat for each image -->
+    <div class="col-6 col-md-3">
+      <div class="card border-0 shadow-sm hover-shadow rounded-4">
+        <img src="images/product-3.webp" class="card-img-top gallery-img" onclick="openModal(this.src)" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-0 shadow-sm hover-shadow rounded-4">
+        <img src="images/product-4.webp" class="card-img-top gallery-img" onclick="openModal(this.src)" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-0 shadow-sm hover-shadow rounded-4">
+        <img src="images/product-5.webp" class="card-img-top gallery-img" onclick="openModal(this.src)" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-0 shadow-sm hover-shadow rounded-4">
+        <img src="images/product-5.webp" class="card-img-top gallery-img" onclick="openModal(this.src)" alt="Image 1">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+<!-- Modal -->
+<!-- Modal -->
+<div id="galleryModal" class="custom-modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="modal-img" alt="Full View">
+</div>
+
+
+<script>
+  function openModal(src) {
+    const modal = document.getElementById('galleryModal');
+    const modalImg = document.getElementById('modalImage');
+
+    modal.style.display = 'flex'; // Make sure this is 'flex'
+    modalImg.src = src;
+  }
+
+  function closeModal() {
+    document.getElementById('galleryModal').style.display = 'none';
+  }
+</script>
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

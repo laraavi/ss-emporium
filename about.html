@@ -11,107 +11,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-       <!-- Premium Navbar -->
-     <nav class="navbar navbar-premium navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/SS E blue.jpg" alt="Logo">
-            </a>
-  
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                            <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <!-- Dark Mode Toggle Button -->
-             <div class="dark-mode-toggle">
-              <button id="darkModeSwitch">🌙</button>
-          </div>
-  
-                
-            </div>
-        </div>
-    </nav>
-  
-    <!-- Mobile Menu Offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="mobileMenuLabel">BrandName</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="mobileDropdown">
-                        <li><a class="dropdown-item" href="product-1.html">3-In-1 Multifunctional Dental CBCT - Smart3D-X</a></li>
-                        <li><a class="dropdown-item" href="product-2.html">Professional Dental CBCT - HiRes3D</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="product.html">All Products</a></li>
-                    </ul>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-  
-             <div class="dark-mode-toggle">
-              <button id="darkModeSwitch">🌙</button>
-          </div>
-  
-            <div class="mt-4 pt-3 border-top">
-                <div class="d-flex justify-content-center">
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-dark mx-3"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
+        <!-- Premium Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/SS Done.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <!-- Hamburger for mobile -->
+    <button class="hamburger d-lg-none" id="hamburgerBtn">☰</button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            About Us
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">SS Emporium</a></li>
+            <li><a class="dropdown-item" href="ssa.html">Sure Smile Aligner</a></li>
+            <li><a class="dropdown-item" href="ssa.html">AdvancedDent Dental Lab</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="product.html">All Products</a></li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+            Learn
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Training</a></li>
+           
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button">
+           Support
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="">Download Center</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Fullscreen Mobile Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <button class="close-btn" id="closeMenuBtn">&times;</button>
+ <ul class="menu-items">
+  <li><a href="index.html">HOME</a></li>
+  
+
+  <!-- Side Slide Dropdown -->
+  <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">About Us</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="about.html">SS Emporium</a></li>
+      <li><a href="ssa.html">Sure Smile Aligner</a></li>
+      <li><a href="ssa.html">AdvancedDent Dental Lab</a></li>
+    </ul>
+  </li>
+  <li><a href="product.html">All Products</a></li>
+
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Learn</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Training</a></li>
+      
+    </ul>
+  </li>
+   <li class="mobile-dropdown">
+    <a href="#" class="dropdown-toggle">Support</a>
+    <ul class="mobile-submenu slide-menu">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="">Download Center</a></li>
+      
+    </ul>
+  </li>
+</ul>
+
+</div>
     <!-- Breadcrumb Section -->
     <nav aria-label="breadcrumb" class="breadcrumb-section">
         <div class="container">
@@ -121,26 +118,251 @@
           </ol>
         </div>
       </nav>
-    <!--About Section-->
-    <section class="about-section">
-        <div class="about-container">
-          <div class="about-image">
-            <img src="images/g1.webp" alt="About Us Image">
-          </div>
+               <!-- Hero Section -->
+ <section class="blog-hero d-flex align-items-center justify-content-center text-white" 
+         style="background: url('images/caro-1.jpg') no-repeat center center/cover; height: 100vh;">
+  <div class="text-center">
+    <h1 class="display-4 fw-bold">About Us</h1>
+    <p class="lead">Discover who we are and what we stand for</p>
+  </div>
+</section>
+
+  <!--hero section end-->
+    <!-- About Section Start -->
+  <seciton class="aboutssa-section bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Image Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+        <div style="margin: 50px 0 0 0;">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/hthA__KgPag?si=9DoXwetQsCsr4hfu"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen></iframe>
+</div>
+        </div>
+        
+        <!-- Text Column -->
+        <div class="col-md-6  mt-xl-5" >
           <div class="about-content">
             <h2>About <span>Our Company</span></h2>
             <p>We are passionate innovators dedicated to creating impactful solutions that drive success. Our mission is to empower businesses with cutting-edge technology and creative strategies, delivering exceptional value every step of the way.</p>
-            <p>A dental equipment supplier and importer company typically focuses on providing a range of dental products and equipment to dental professionals, clinics, and other related businesses. These companies usually import high-quality dental tools, machinery, and supplies from global manufacturers, ensuring they meet the specific needs of the dental industry.</p>
+            
             <ul class="about-features">
               <li>✅ 10+ Years of Experience</li>
               <li>✅ Award-Winning Team</li>
               <li>✅ 24/7 Client Support</li>
               <li>✅ 1000+ Happy Clients</li>
             </ul>
-            <a href="contact.html" class="about-btn">Contact Us</a>
+            <a href="contact.html" class="btn  btn-submit">Contact Us</a>
           </div>
         </div>
-      </section>
+        
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+   <!--pic-details start-->
+   <div class="container py-5">
+  <div class="row">
+    
+    <!-- R&D Center -->
+    <div class="col-md-4 facility-card">
+      <img src="images/about-1.png" alt="R&D Center">
+      <div class="facility-title">R&amp;D Center (Beijing)</div>
+      <div class="facility-desc">· Research & Development Center.</div>
+    </div>
+
+    <!-- Factory Beijing -->
+    <div class="col-md-4 facility-card">
+      <img src="images/about-2.png" alt="Factory Beijing">
+      <div class="facility-title">Factory (Beijing)</div>
+      <div class="facility-desc">
+        · Small-batch Production with Innovation Test.<br>
+        · Annual Production Capacity &gt; 1000 Units.
+      </div>
+    </div>
+
+    <!-- Factory Zhejiang -->
+    <div class="col-md-4 facility-card">
+      <img src="images/about-3.png" alt="Factory Zhejiang">
+      <div class="facility-title">Factory (Zhejiang)</div>
+      <div class="facility-desc">
+        · Batch Production.<br>
+        · Scientific and Technological Factory,<br>
+        Qualitive Factory, Green Factory, Dynamic Factory.<br>
+        · Annual Production Capacity &gt; 3000 Units.
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--milestone section start-->
+<div class="text-center mt-5 mb-4">
+    <h2 style="color:#6c63ff;"><span style="border-bottom: 2px solid #6c63ff;">MileStone</span></h2>
+  </div>
+
+  <div class="timeline">
+
+    <!-- 2025 -->
+    <div class="timeline-item left">
+      <div class="year">2025</div>
+      <div class="content">
+        Some milestone description for 2025 goes here.
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="timeline-item right">
+      <div class="year">2024</div>
+      <div class="content">
+        Customized Bracketless Aligner awarded the Medical Device Registration Certificate.
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="timeline-item left">
+      <div class="year">2023</div>
+      <div class="content">
+        Ultra3D won the Red Dot Design Award.
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="timeline-item right">
+      <div class="year">2022</div>
+      <div class="content">
+        World's first dual-source, dual-detector Ultra3D scanner launched.
+      </div>
+    </div>
+
+    <!-- 2021 -->
+    <div class="timeline-item left">
+      <div class="year">2021</div>
+      <div class="content">
+        Major production upgrade and AI integration for medical imaging.
+      </div>
+    </div>
+
+    <!-- 2020 -->
+    <div class="timeline-item right">
+      <div class="year">2020</div>
+      <div class="content">
+        Strategic partnership with major research centers in Europe.
+      </div>
+    </div>
+
+    <!-- 2019 -->
+    <div class="timeline-item left">
+      <div class="year">2019</div>
+      <div class="content">
+        Company expansion into international markets.
+      </div>
+    </div>
+
+    <!-- 2018 -->
+    <div class="timeline-item right">
+      <div class="year">2018</div>
+      <div class="content">
+        Patent approval for next-gen dental imaging system.
+      </div>
+    </div>
+
+    <!-- 2017 -->
+    <div class="timeline-item left">
+      <div class="year">2017</div>
+      <div class="content">
+        Launch of first flagship intraoral scanner.
+      </div>
+    </div>
+
+    <!-- 2016 -->
+    <div class="timeline-item right">
+      <div class="year">2016</div>
+      <div class="content">
+        Foundation laid for new R&D center in Beijing.
+      </div>
+    </div>
+
+    <!-- 2015 -->
+    <div class="timeline-item left">
+      <div class="year">2015</div>
+      <div class="content">
+        Company founded with a vision to innovate dental technology.
+      </div>
+    </div>
+
+  </div>
+
+
+
+<!-- Certificate Section -->
+<section class="certificate-section">
+  <h2 class="section-title">Our Certificates</h2>
+  <div class="swiper certificate-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="certificate-item">
+          <a href="images/certificate-1.png" class="glightbox" data-gallery="certificates">
+            <img src="images/certificate-1.png" alt="Certificate 1" class="img-fluid rounded shadow-sm">
+            <div class="overlay">
+              <i class="fas fa-plus plus-icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="certificate-item">
+          <a href="images/certificate-1.png" class="glightbox" data-gallery="certificates">
+            <img src="images/certificate-1.png" alt="Certificate 2" class="img-fluid rounded shadow-sm">
+            <div class="overlay">
+              <i class="fas fa-plus plus-icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="certificate-item">
+          <a href="images/certificate-1.png" class="glightbox" data-gallery="certificates">
+            <img src="images/certificate-1.png" alt="Certificate 2" class="img-fluid rounded shadow-sm">
+            <div class="overlay">
+              <i class="fas fa-plus plus-icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="certificate-item">
+          <a href="images/certificate-1.png" class="glightbox" data-gallery="certificates">
+            <img src="images/certificate-1.png" alt="Certificate 2" class="img-fluid rounded shadow-sm">
+            <div class="overlay">
+              <i class="fas fa-plus plus-icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+
+
+  
+  
+    
+    
+  <!--milestone section end-->   
+ <!-- WhatsApp Button -->
+<a href="https://wa.me/+8801608451204" target="_blank" class="floating-button whatsapp-btn" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+
       
 
 
@@ -156,30 +378,108 @@
     
     <!-- ====== Footer Section ====== -->
     <footer class="footer" id="footer">
-        <p>© 2025  SS-EMPORIUM Website. All rights reserved and Developed by Lilium Info Tech</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+          <div class="footer-grid">
+      
+            <!-- Column 1: Logo & Details -->
+            <div class="footer-column">
+              <div class="footer-logo">
+                <img src="images/SS E blue.jpg" alt="SS-EMPORIUM Logo">
+              </div>
+              <p>SS-EMPORIUM is a trusted dental equipment supplier and importer, dedicated to serving clinics and professionals nationwide.</p>
+            </div>
+      
+            <!-- Column 2: Useful Links -->
+  <div class="footer-column">
+    <h4>Useful Links</h4>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li> <!-- ✅ New Login link added -->
+    </ul>
+  </div>
+  
+      
+            <!-- Column 3: Social Links -->
+            <div class="footer-column">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom Text -->
+          <div class="footer-bottom">
+            <p>© 2025 SS-EMPORIUM Website. All rights reserved. Developed by Lilium Info Tech</p>
+          </div>
         </div>
       </footer>
   
     
     
    <!-- Bootstrap 5 JS Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>>
+   <!-- JS Libraries -->
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
+
+
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const fullscreenMenu = document.getElementById("fullscreenMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+  hamburgerBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.add("open");
+  });
+
+  closeMenuBtn.addEventListener("click", () => {
+    fullscreenMenu.classList.remove("open");
+  });
+</script>
+
+<script>
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      const parent = this.closest('.mobile-dropdown');
+      parent.classList.toggle('open');
+    });
+  });
+</script>
+   <script>
+ const swiper = new Swiper('.certificate-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    480: { slidesPerView: 1 }
+  }
+});
+</script>
+
+
 
    <!-- Custom JS  -->
 
    <script src="js/main.js"></script>
-   <script src="js/darkMode.js"></script>
-   <script>
-     const darkModeSwitch = document.getElementById('darkModeSwitch');
    
-     darkModeSwitch.addEventListener('click', function() {
-       document.body.classList.toggle('dark-mode');
-     });
-   </script>
    
      
 </body>
